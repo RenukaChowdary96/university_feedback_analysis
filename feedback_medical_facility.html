@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Facility Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <form action="submit_feedback.php" method="POST">
+        <h2>Medical Facility Feedback Form</h2>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <label for="question1">1. How would you rate the quality of healthcare services provided at the medical facility?</label>
+            <input type="radio" name="question1" value="Poor" required> Poor
+            <input type="radio" name="question1" value="Fair"> Fair
+            <input type="radio" name="question1" value="Good"> Good
+            <input type="radio" name="question1" value="Very Good"> Very Good
+            <input type="radio" name="question1" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <label for="question2">2. Are the medical staff professional, polite, and helpful?</label>
+            <input type="radio" name="question2" value="Yes" required> Yes
+            <input type="radio" name="question2" value="No"> No
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <label for="question3">3. Is the medical facility adequately equipped to handle common health issues?</label>
+            <input type="radio" name="question3" value="Yes" required> Yes
+            <input type="radio" name="question3" value="No"> No
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <label for="question4">4. How easy is it to access the medical facility in case of an emergency?</label>
+            <input type="radio" name="question4" value="Not Easy" required> Not Easy
+            <input type="radio" name="question4" value="Moderately Easy"> Moderately Easy
+            <input type="radio" name="question4" value="Very Easy"> Very Easy
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <label for="question5">5. Are the operating hours of the medical facility convenient for students and staff?</label>
+            <input type="radio" name="question5" value="Yes" required> Yes
+            <input type="radio" name="question5" value="No"> No
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <label for="question6">6. How would you rate the cleanliness and hygiene of the medical facility?</label>
+            <input type="radio" name="question6" value="Poor" required> Poor
+            <input type="radio" name="question6" value="Fair"> Fair
+            <input type="radio" name="question6" value="Good"> Good
+            <input type="radio" name="question6" value="Very Good"> Very Good
+            <input type="radio" name="question6" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <label for="question7">7. Is the pharmacy at the medical facility well-stocked with essential medicines?</label>
+            <input type="radio" name="question7" value="Yes" required> Yes
+            <input type="radio" name="question7" value="No"> No
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <label for="question8">8. Do you feel comfortable and well-cared for when visiting the medical facility?</label>
+            <input type="radio" name="question8" value="Yes" required> Yes
+            <input type="radio" name="question8" value="No"> No
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <label for="question9">9. Are the waiting times reasonable at the medical facility?</label>
+            <input type="radio" name="question9" value="Yes" required> Yes
+            <input type="radio" name="question9" value="No"> No
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <label for="question10">10. What suggestions do you have for improving healthcare services on campus?</label>
+            <textarea name="question10" rows="3" required></textarea>
+        </div>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

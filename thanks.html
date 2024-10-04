@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #343a40, #495057); /* Muted gradient */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 30px;
+        }
+
+        .thank-you-message {
+            text-align: center;
+            font-size: 48px;
+            color: #ffffff;
+            font-weight: 600;
+            line-height: 1.5;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1); /* Softer background */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .thank-you-message h1 {
+            margin: 0;
+            font-size: 64px;
+            color: #f8f9fa; /* Soft white */
+        }
+
+        .thank-you-message p {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #ced4da; /* Muted gray */
+            font-weight: 400;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.jpeg" alt="Vignan's Logo" class="logo">
+        <div class="thank-you-message">
+            <h1>Thank You!</h1>
+            <p>We appreciate your feedback.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Department Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .question-container {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .options {
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>IT Department Feedback Form</h1>
+        <form id="feedbackForm" action="submit_feedback.php" method="post">
+            <!-- Hidden inputs for token and location -->
+            <input type="hidden" name="token" value="unique_token_here">
+            <input type="hidden" name="location" value="IT Department">
+
+            <!-- Feedback form questions with radio buttons -->
+            <div class="question-container">
+                <label for="question1">1. How would you rate the overall IT infrastructure?</label>
+                <div class="options">
+                    <input type="radio" name="question1" value="Very Poor" required> Very Poor
+                    <input type="radio" name="question1" value="Poor"> Poor
+                    <input type="radio" name="question1" value="Average"> Average
+                    <input type="radio" name="question1" value="Good"> Good
+                    <input type="radio" name="question1" value="Excellent"> Excellent
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label for="question2">2. How satisfied are you with the technical support provided?</label>
+                <div class="options">
+                    <input type="radio" name="question2" value="Very Poor" required> Very Poor
+                    <input type="radio" name="question2" value="Poor"> Poor
+                    <input type="radio" name="question2" value="Average"> Average
+                    <input type="radio" name="question2" value="Good"> Good
+                    <input type="radio" name="question2" value="Excellent"> Excellent
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label for="question3">3. How well is the IT team able to resolve technical issues?</label>
+                <div class="options">
+                    <input type="radio" name="question3" value="Very Poor" required> Very Poor
+                    <input type="radio" name="question3" value="Poor"> Poor
+                    <input type="radio" name="question3" value="Average"> Average
+                    <input type="radio" name="question3" value="Good"> Good
+                    <input type="radio" name="question3" value="Excellent"> Excellent
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label for="question4">4. How responsive is the IT department when issues are reported?</label>
+                <div class="options">
+                    <input type="radio" name="question4" value="Very Poor" required> Very Poor
+                    <input type="radio" name="question4" value="Poor"> Poor
+                    <input type="radio" name="question4" value="Average"> Average
+                    <input type="radio" name="question4" value="Good"> Good
+                    <input type="radio" name="question4" value="Excellent"> Excellent
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label for="question5">5. How would you rate the internet connectivity in the department?</label>
+                <div class="options">
+                    <input type="radio" name="question5" value="Very Poor" required> Very Poor
+                    <input type="radio" name="question5" value="Poor"> Poor
+                    <input type="radio" name="question5" value="Average"> Average
+                    <input type="radio" name="question5" value="Good"> Good
+                    <input type="radio" name="question5" value="Excellent"> Excellent
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label for="question6">6. How efficient is the department’s software installation process?</label>
+                <div class="options">
+                    <input type="radio" name="question6" value="Very Poor" required> Very Poor
+                    <input type="radio" name="question6" value="Poor"> Poor
+                    <input type="radio" name="question6" value="Average"> Average
+                    <input type="radio" name="question6" value="Good"> Good
+                    <input type="radio" name="question6" value="Excellent"> Excellent
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label for="question7">7. How satisfied are you with the department’s data security measures?</label>
+                <div class="options">
+                    <input type="radio" name="question7" value="Very Poor" required> Very Poor
+                    <input type="radio" name="question7" value="Poor"> Poor
+                    <input type="radio" name="question7" value="Average"> Average
+                    <input type="radio" name="question7" value="Good"> Good
+                    <input type="radio" name="question7" value="Excellent"> Excellent
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label for="question8">8. How would you rate the hardware quality provided in the department?</label>
+                <div class="options">
+                    <input type="radio" name="question8" value="Very Poor" required> Very Poor
+                    <input type="radio" name="question8" value="Poor"> Poor
+                    <input type="radio" name="question8" value="Average"> Average
+                    <input type="radio" name="question8" value="Good"> Good
+                    <input type="radio" name="question8" value="Excellent"> Excellent
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label for="question9">9. How well does the IT department communicate updates and changes?</label>
+                <div class="options">
+                    <input type="radio" name="question9" value="Very Poor" required> Very Poor
+                    <input type="radio" name="question9" value="Poor"> Poor
+                    <input type="radio" name="question9" value="Average"> Average
+                    <input type="radio" name="question9" value="Good"> Good
+                    <input type="radio" name="question9" value="Excellent"> Excellent
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label for="question10">10. Please provide any additional comments or suggestions for improving IT services:</label>
+                <textarea name="question10" rows="5" required></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+

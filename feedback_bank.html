@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <form action="submit_feedback.php" method="POST">
+        <h2>Bank Feedback Form</h2>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <label for="question1">1. How would you rate the ease of accessing banking services on campus?</label>
+            <input type="radio" name="question1" value="Poor" required> Poor
+            <input type="radio" name="question1" value="Fair"> Fair
+            <input type="radio" name="question1" value="Good"> Good
+            <input type="radio" name="question1" value="Very Good"> Very Good
+            <input type="radio" name="question1" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <label for="question2">2. Are the staff at the campus bank helpful and professional?</label>
+            <input type="radio" name="question2" value="Yes" required> Yes
+            <input type="radio" name="question2" value="No"> No
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <label for="question3">3. Are the ATM services on campus reliable and easily accessible?</label>
+            <input type="radio" name="question3" value="Yes" required> Yes
+            <input type="radio" name="question3" value="No"> No
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <label for="question4">4. Is the bank open during convenient hours for students and staff?</label>
+            <input type="radio" name="question4" value="Yes" required> Yes
+            <input type="radio" name="question4" value="No"> No
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <label for="question5">5. How would you rate the range of services offered by the campus bank (loans, savings, etc.)?</label>
+            <input type="radio" name="question5" value="Poor" required> Poor
+            <input type="radio" name="question5" value="Fair"> Fair
+            <input type="radio" name="question5" value="Good"> Good
+            <input type="radio" name="question5" value="Very Good"> Very Good
+            <input type="radio" name="question5" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <label for="question6">6. Have you encountered any issues with transaction or banking services on campus?</label>
+            <input type="radio" name="question6" value="Yes" required> Yes
+            <input type="radio" name="question6" value="No"> No
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <label for="question7">7. How secure do you feel using the banking facilities on campus?</label>
+            <input type="radio" name="question7" value="Not Secure" required> Not Secure
+            <input type="radio" name="question7" value="Moderately Secure"> Moderately Secure
+            <input type="radio" name="question7" value="Highly Secure"> Highly Secure
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <label for="question8">8. Is there adequate seating and comfort in the bank’s waiting area?</label>
+            <input type="radio" name="question8" value="Yes" required> Yes
+            <input type="radio" name="question8" value="No"> No
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <label for="question9">9. How would you rate the speed and efficiency of services at the campus bank?</label>
+            <input type="radio" name="question9" value="Poor" required> Poor
+            <input type="radio" name="question9" value="Fair"> Fair
+            <input type="radio" name="question9" value="Good"> Good
+            <input type="radio" name="question9" value="Very Good"> Very Good
+            <input type="radio" name="question9" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <label for="question10">10. What additional services or improvements would you like to see at the campus bank?</label>
+            <textarea name="question10" rows="3" required></textarea>
+        </div>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

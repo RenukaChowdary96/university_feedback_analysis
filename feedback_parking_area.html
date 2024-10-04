@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Area Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <form action="submit_feedback.php" method="POST">
+        <h2>Parking Area Feedback Form</h2>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <label for="question1">1. How would you rate the availability of parking spaces for students and staff?</label>
+            <input type="radio" name="question1" value="Poor" required> Poor
+            <input type="radio" name="question1" value="Fair"> Fair
+            <input type="radio" name="question1" value="Good"> Good
+            <input type="radio" name="question1" value="Very Good"> Very Good
+            <input type="radio" name="question1" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <label for="question2">2. Is the parking area secure and monitored for safety?</label>
+            <input type="radio" name="question2" value="Yes" required> Yes
+            <input type="radio" name="question2" value="No"> No
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <label for="question3">3. How accessible and well-located is the parking area in relation to the campus?</label>
+            <input type="radio" name="question3" value="Not Accessible" required> Not Accessible
+            <input type="radio" name="question3" value="Moderately Accessible"> Moderately Accessible
+            <input type="radio" name="question3" value="Easily Accessible"> Easily Accessible
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <label for="question4">4. Are there any concerns about overcrowding or limited space in the parking area?</label>
+            <input type="radio" name="question2" value="Yes" required> Yes
+            <input type="radio" name="question2" value="No"> No
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <label for="question5">5. Is the parking area adequately lit during evening hours?</label>
+            <input type="radio" name="question5" value="Yes" required> Yes
+            <input type="radio" name="question5" value="No"> No
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <label for="question6">6. How easy is it to navigate the parking area (signage, layout)?</label>
+            <input type="radio" name="question6" value="Not Easy" required> Not Easy
+            <input type="radio" name="question6" value="Moderately Easy"> Moderately Easy
+            <input type="radio" name="question6" value="Very Easy"> Very Easy
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <label for="question7">7. Are the parking spaces well-marked and organized?</label>
+            <input type="radio" name="question7" value="Yes" required> Yes
+            <input type="radio" name="question7" value="No"> No
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <label for="question8">8. Have you experienced any issues with parking management (permits, fees, etc.)?</label>
+            <input type="radio" name="question2" value="Yes" required> Yes
+            <input type="radio" name="question2" value="No"> No
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <label for="question9">9. How satisfied are you with the cleanliness and maintenance of the parking area?</label>
+            <input type="radio" name="question9" value="Poor" required> Poor
+            <input type="radio" name="question9" value="Fair"> Fair
+            <input type="radio" name="question9" value="Good"> Good
+            <input type="radio" name="question9" value="Very Good"> Very Good
+            <input type="radio" name="question9" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <label for="question10">10. What suggestions do you have for improving the parking facilities?</label>
+            <textarea name="question10" rows="3" required></textarea>
+        </div>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

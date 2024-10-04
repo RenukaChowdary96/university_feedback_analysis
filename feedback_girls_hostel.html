@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girls Hostel Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <form action="submit_feedback.php" method="POST">
+        <input type="hidden" name="location" value="Girls Hostel">
+        <!-- Question 1 -->
+        <div class="question">
+            <label for="question1">1. How would you rate the safety and security measures specifically for female residents?</label>
+            <div class="radio-group">
+                <input type="radio" id="q1_worst" name="question1" value="Worst" required>
+                <label for="q1_worst">Worst</label>
+                <input type="radio" id="q1_bad" name="question1" value="Bad">
+                <label for="q1_bad">Bad</label>
+                <input type="radio" id="q1_better" name="question1" value="Better">
+                <label for="q1_better">Better</label>
+                <input type="radio" id="q1_good" name="question1" value="Good">
+                <label for="q1_good">Good</label>
+                <input type="radio" id="q1_best" name="question1" value="Best">
+                <label for="q1_best">Best</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <label for="question2">2. Are there adequate facilities for privacy in shared spaces (bathrooms, common areas)?</label>
+            <div class="radio-group">
+                <input type="radio" id="q2_worst" name="question2" value="Worst" required>
+                <label for="q2_worst">Worst</label>
+                <input type="radio" id="q2_bad" name="question2" value="Bad">
+                <label for="q2_bad">Bad</label>
+                <input type="radio" id="q2_better" name="question2" value="Better">
+                <label for="q2_better">Better</label>
+                <input type="radio" id="q2_good" name="question2" value="Good">
+                <label for="q2_good">Good</label>
+                <input type="radio" id="q2_best" name="question2" value="Best">
+                <label for="q2_best">Best</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <label for="question3">3. How comfortable are you with the policies related to curfews and entry/exit timings?</label>
+            <div class="radio-group">
+                <input type="radio" id="q3_worst" name="question3" value="Worst" required>
+                <label for="q3_worst">Worst</label>
+                <input type="radio" id="q3_bad" name="question3" value="Bad">
+                <label for="q3_bad">Bad</label>
+                <input type="radio" id="q3_better" name="question3" value="Better">
+                <label for="q3_better">Better</label>
+                <input type="radio" id="q3_good" name="question3" value="Good">
+                <label for="q3_good">Good</label>
+                <input type="radio" id="q3_best" name="question3" value="Best">
+                <label for="q3_best">Best</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <label for="question4">4. Are the provisions for sanitary hygiene products readily available and satisfactory?</label>
+            <div class="radio-group">
+                <input type="radio" id="q4_worst" name="question4" value="Worst" required>
+                <label for="q4_worst">Worst</label>
+                <input type="radio" id="q4_bad" name="question4" value="Bad">
+                <label for="q4_bad">Bad</label>
+                <input type="radio" id="q4_better" name="question4" value="Better">
+                <label for="q4_better">Better</label>
+                <input type="radio" id="q4_good" name="question4" value="Good">
+                <label for="q4_good">Good</label>
+                <input type="radio" id="q4_best" name="question4" value="Best">
+                <label for="q4_best">Best</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <label for="question5">5. Do you feel the hostel management is responsive to the specific needs of female residents?</label>
+            <div class="radio-group">
+                <input type="radio" id="q5_worst" name="question5" value="Worst" required>
+                <label for="q5_worst">Worst</label>
+                <input type="radio" id="q5_bad" name="question5" value="Bad">
+                <label for="q5_bad">Bad</label>
+                <input type="radio" id="q5_better" name="question5" value="Better">
+                <label for="q5_better">Better</label>
+                <input type="radio" id="q5_good" name="question5" value="Good">
+                <label for="q5_good">Good</label>
+                <input type="radio" id="q5_best" name="question5" value="Best">
+                <label for="q5_best">Best</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <label for="question6">6. How comfortable and secure do you feel with the accommodation of other female roommates?</label>
+            <div class="radio-group">
+                <input type="radio" id="q6_worst" name="question6" value="Worst" required>
+                <label for="q6_worst">Worst</label>
+                <input type="radio" id="q6_bad" name="question6" value="Bad">
+                <label for="q6_bad">Bad</label>
+                <input type="radio" id="q6_better" name="question6" value="Better">
+                <label for="q6_better">Better</label>
+                <input type="radio" id="q6_good" name="question6" value="Good">
+                <label for="q6_good">Good</label>
+                <input type="radio" id="q6_best" name="question6" value="Best">
+                <label for="q6_best">Best</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <label for="question7">7. Are there any concerns about harassment or safety that should be addressed by the hostel authorities?</label>
+            <div class="radio-group">
+                <input type="radio" id="q7_worst" name="question7" value="Worst" required>
+                <label for="q7_worst">Worst</label>
+                <input type="radio" id="q7_bad" name="question7" value="Bad">
+                <label for="q7_bad">Bad</label>
+                <input type="radio" id="q7_better" name="question7" value="Better">
+                <label for="q7_better">Better</label>
+                <input type="radio" id="q7_good" name="question7" value="Good">
+                <label for="q7_good">Good</label>
+                <input type="radio" id="q7_best" name="question7" value="Best">
+                <label for="q7_best">Best</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <label for="question8">8. How would you rate the cleanliness and maintenance of the washrooms and other facilities?</label>
+            <div class="radio-group">
+                <input type="radio" id="q8_worst" name="question8" value="Worst" required>
+                <label for="q8_worst">Worst</label>
+                <input type="radio" id="q8_bad" name="question8" value="Bad">
+                <label for="q8_bad">Bad</label>
+                <input type="radio" id="q8_better" name="question8" value="Better">
+                <label for="q8_better">Better</label>
+                <input type="radio" id="q8_good" name="question8" value="Good">
+                <label for="q8_good">Good</label>
+                <input type="radio" id="q8_best" name="question8" value="Best">
+                <label for="q8_best">Best</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <label for="question9">9. Are the common areas (kitchen, lounge) well-equipped for female residents’ needs?</label>
+            <div class="radio-group">
+                <input type="radio" id="q9_worst" name="question9" value="Worst" required>
+                <label for="q9_worst">Worst</label>
+                <input type="radio" id="q9_bad" name="question9" value="Bad">
+                <label for="q9_bad">Bad</label>
+                <input type="radio" id="q9_better" name="question9" value="Better">
+                <label for="q9_better">Better</label>
+                <input type="radio" id="q9_good" name="question9" value="Good">
+                <label for="q9_good">Good</label>
+                <input type="radio" id="q9_best" name="question9" value="Best">
+                <label for="q9_best">Best</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <label for="question10">10. What improvements would you suggest to make the hostel more accommodating for female residents?</label>
+            <textarea id="question10" name="question10" rows="4" required></textarea>
+        </div>
+        <br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

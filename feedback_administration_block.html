@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrative Block Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <form action="submit_feedback.php" method="POST">
+        <h2>Administrative Block Feedback Form</h2>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <label for="question1">1. How would you rate the helpfulness and professionalism of the administrative staff?</label>
+            <input type="radio" name="question1" value="Poor" required> Poor
+            <input type="radio" name="question1" value="Fair"> Fair
+            <input type="radio" name="question1" value="Good"> Good
+            <input type="radio" name="question1" value="Very Good"> Very Good
+            <input type="radio" name="question1" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <label for="question2">2. Is it easy to navigate the administrative block and find the services you need?</label>
+            <input type="radio" name="question2" value="Yes" required> Yes
+            <input type="radio" name="question2" value="No"> No
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <label for="question3">3. Are you satisfied with the speed and efficiency of administrative processes (enrollment, certificates, etc.)?</label>
+            <input type="radio" name="question3" value="Poor" required> Poor
+            <input type="radio" name="question3" value="Fair"> Fair
+            <input type="radio" name="question3" value="Good"> Good
+            <input type="radio" name="question3" value="Very Good"> Very Good
+            <input type="radio" name="question3" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <label for="question4">4. How would you rate the communication and availability of the administrative office?</label>
+            <input type="radio" name="question4" value="Poor" required> Poor
+            <input type="radio" name="question4" value="Fair"> Fair
+            <input type="radio" name="question4" value="Good"> Good
+            <input type="radio" name="question4" value="Very Good"> Very Good
+            <input type="radio" name="question4" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <label for="question5">5. Is the administrative block accessible for all students, including those with disabilities?</label>
+            <input type="radio" name="question5" value="Yes" required> Yes
+            <input type="radio" name="question5" value="No"> No
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <label for="question6">6. Are the office hours convenient for students to resolve their concerns?</label>
+            <input type="radio" name="question6" value="Yes" required> Yes
+            <input type="radio" name="question6" value="No"> No
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <label for="question7">7. How responsive is the administrative team to feedback or complaints?</label>
+            <input type="radio" name="question7" value="Not Responsive" required> Not Responsive
+            <input type="radio" name="question7" value="Moderately Responsive"> Moderately Responsive
+            <input type="radio" name="question7" value="Highly Responsive"> Highly Responsive
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <label for="question8">8. Is the physical environment of the administrative block (seating, ventilation) comfortable?</label
+                <input type="radio" name="question8" value="Yes"> required> Yes
+                <input type="radio" name="question8" value="No"> No
+            </div>
+    
+            <!-- Question 9 -->
+            <div class="question">
+                <label for="question9">9. How would you rate the digital/online services provided by the administrative office?</label>
+                <input type="radio" name="question9" value="Poor" required> Poor
+                <input type="radio" name="question9" value="Fair"> Fair
+                <input type="radio" name="question9" value="Good"> Good
+                <input type="radio" name="question9" value="Very Good"> Very Good
+                <input type="radio" name="question9" value="Excellent"> Excellent
+            </div>
+    
+            <!-- Question 10 -->
+            <div class="question">
+                <label for="question10">10. What improvements would you suggest for a smoother administrative experience?</label>
+                <textarea name="question10" rows="3" required></textarea>
+            </div>
+    
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </body>
+    </html>
+    

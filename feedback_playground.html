@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <form action="submit_feedback.php" method="POST">
+        <h2>Playground Feedback Form</h2>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <label for="question1">1. How would you rate the maintenance of the playground facilities (grass, courts, etc.)?</label>
+            <input type="radio" name="question1" value="Poor" required> Poor
+            <input type="radio" name="question1" value="Fair"> Fair
+            <input type="radio" name="question1" value="Good"> Good
+            <input type="radio" name="question1" value="Very Good"> Very Good
+            <input type="radio" name="question1" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <label for="question2">2. Are the sports equipment and resources adequate for your needs?</label>
+            <input type="radio" name="question2" value="Yes" required> Yes
+            <input type="radio" name="question2" value="No"> No
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <label for="question3">3. Is there enough space for all students to participate in activities?</label>
+            <input type="radio" name="question3" value="Yes" required> Yes
+            <input type="radio" name="question3" value="No"> No
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <label for="question4">4. How accessible is the playground during free time or after classes?</label>
+            <input type="radio" name="question4" value="Not Accessible" required> Not Accessible
+            <input type="radio" name="question4" value="Moderately Accessible"> Moderately Accessible
+            <input type="radio" name="question4" value="Easily Accessible"> Easily Accessible
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <label for="question5">5. How would you rate the quality and safety of the playground facilities?</label>
+            <input type="radio" name="question5" value="Poor" required> Poor
+            <input type="radio" name="question5" value="Fair"> Fair
+            <input type="radio" name="question5" value="Good"> Good
+            <input type="radio" name="question5" value="Very Good"> Very Good
+            <input type="radio" name="question5" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <label for="question6">6. Are there enough seating and rest areas for students near the playground?</label>
+            <input type="radio" name="question6" value="Yes" required> Yes
+            <input type="radio" name="question6" value="No"> No
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <label for="question7">7. Do you feel the playground caters to all types of sports and recreational activities?</label>
+            <input type="radio" name="question7" value="Yes" required> Yes
+            <input type="radio" name="question7" value="No"> No
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <label for="question8">8. How effective is the management of sports events and activities in the playground?</label>
+            <input type="radio" name="question8" value="Poor" required> Poor
+            <input type="radio" name="question8" value="Fair"> Fair
+            <input type="radio" name="question8" value="Good"> Good
+            <input type="radio" name="question8" value="Very Good"> Very Good
+            <input type="radio" name="question8" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <label for="question9">9. Are there any concerns about cleanliness and upkeep in the playground area?</label>
+            <input type="radio" name="question2" value="Yes" required> Yes
+            <input type="radio" name="question2" value="No"> No
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <label for="question10">10. What additional sports facilities or improvements would you like to see?</label>
+            <textarea name="question10" rows="3" required></textarea>
+        </div>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

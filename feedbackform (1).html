@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        /* Simple styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Feedback Form</h1>
+        <form action="process_feedback.php" method="post">
+            <!-- Hidden inputs for token and location -->
+            <input type="hidden" name="token" value="unique_token_here">
+            <input type="hidden" name="location" value="selected_location_here">
+
+            <!-- Feedback form questions -->
+            <label for="question1">Question 1:</label>
+            <input type="text" name="question1" required>
+
+            <label for="question2">Question 2:</label>
+            <input type="text" name="question2" required>
+
+            <label for="question3">Question 3:</label>
+            <input type="text" name="question3" required>
+
+            <label for="question4">Question 4:</label>
+            <input type="text" name="question4" required>
+
+            <label for="question5">Question 5:</label>
+            <input type="text" name="question5" required>
+
+            <label for="question6">Question 6:</label>
+            <input type="text" name="question6" required>
+
+            <label for="question7">Question 7:</label>
+            <input type="text" name="question7" required>
+
+            <label for="question8">Question 8:</label>
+            <input type="text" name="question8" required>
+
+            <label for="question9">Question 9:</label>
+            <input type="text" name="question9" required>
+
+            <label for="question10">Question 10:</label>
+            <textarea name="question10" rows="5" required></textarea>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+</body>
+</html>
