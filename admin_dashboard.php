@@ -26,69 +26,84 @@ if ($conn->connect_error) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
 
-        body {
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+    body {
+        background-image: url('admin_dashboardimg.jpg');
 
-        h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 300px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    h2 {
+    margin-bottom: 20px;
+    color: #333;
+    padding: 20px;
+    background-color: #fff; /* White background for the box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Adjust width as needed */
+    color: #333; /* Dark text color for readability */
+}
 
-        label {
-            margin-bottom: 10px;
-            font-size: 14px;
-            color: #666;
-        }
 
-        select, button {
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-            width: 100%;
-        }
 
-        button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent to show background image */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-        button:hover {
-            background-color: #2980b9;
-        }
+    label {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #666;
+    }
 
-        select:focus, button:focus {
-            outline: none;
-            border-color: #3498db;
-        }
-    </style>
+    select, button {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    select:focus, button:focus {
+        outline: none;
+        border-color: #3498db;
+    }
+</style>
+
 </head>
 <body>
     <h2>Welcome to the Admin Dashboard, <?php echo $_SESSION['admin']; ?>!</h2>
